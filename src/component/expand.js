@@ -35,7 +35,7 @@ const Expand = () => {
           <IconButton aria-label="fullscreen" onClick={handleFullScreen}>
             <ZoomIn sx={{ width: 20, height: 20 }} />
           </IconButton>
-          <IconButton aria-label="fullscreen" onClick={handleFullScreen}>
+          <IconButton>
             <MoreVert sx={{ width: 20, height: 20 }} />
           </IconButton>
         </div>

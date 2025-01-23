@@ -37,7 +37,7 @@ const Body = ({ mockData, selectedClass, typeFilter }) => {
 
   return (
     <TableContainer component={Paper} sx={{ backgroundColor: "#ffffff" }}>
-      <Table>
+      <Table stickyHeader>
         <TableHead>
           <TableRow>
             {columns.map((column) => (
@@ -46,8 +46,9 @@ const Body = ({ mockData, selectedClass, typeFilter }) => {
                 sx={{
                   fontWeight: "bold",
                   width: column.width,
-                  position: column.name === "Action" ? "sticky" : "static",
+                  position: "sticky",
                   right: column.name === "Action" ? 0 : "auto",
+                  top: 0,
                 }}
               >
                 {column.name}
